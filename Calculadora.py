@@ -14,6 +14,10 @@ def restar(valor1=0,valor2=0):
 def multiplicar(valor1=0,valor2=0):
 	return valor1 * valor2 
 
+#Division de dos valores
+def dividir(valor1=0,valor2=0):
+	return valor1 / valor2 
+
 def potenciar(valor1=0,valor2=0):
 	return valor1 ** valor2
 
@@ -80,9 +84,11 @@ if(opc == 1):
 
 		elif(opc == 2):
 			restarNuevo = restar(valor1,valor2)
-
+			
+    
 		elif(opc == 3):
 			multiplicacionNuevo = multiplicar(valor1,valor2)
+		
 
 	if (nuevaOperacion != "N" and "n" and "S" and "s"):
 		print ("sali")
@@ -105,6 +111,9 @@ if(opc == 1):
 
 			elif(opc == 3):
 				multiplicacionNuevo2 = multiplicar(valor1,valor2)
+			
+			elif(opc ==4):
+    				divisionNuevo2 = dividir(valor1,valor2)
 
 #Modo de resta
 if(opc == 2):
@@ -123,7 +132,19 @@ if(opc == 3):
 	valor2 = int(input("Ingrese su segundo valor: "))
 	resultadoMultiplicacion = multiplicar(valor1,valor2)
 	print ("El resultado de su Multiplicación es: " + str(resultadoMultiplicacion))
+
 #Modo de división
+if(opc == 4):
+	print("\n")
+	print ("** Entrando al modulo de Division **")
+	valor1 = int(input("Ingrese su primer valor: "))
+	valor2 = int(input("Ingrese su segundo valor: "))
+	resultadoDivision = dividir(valor1,valor2)
+	print ("El resultado de su Multiplicación es: " + str(resultadoDivision))
+
+
+print ("Por fin")
+
 #Modo de potencia
 if (opc == 5):
 	print("\n")
