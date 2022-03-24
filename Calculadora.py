@@ -14,6 +14,9 @@ def restar(valor1=0,valor2=0):
 def multiplicar(valor1=0,valor2=0):
 	return valor1 * valor2 
 
+def potenciar(valor1=0,valor2=0):
+	return valor1 ** valor2
+
 #Calculadora
 def menu():
 	#Opciones
@@ -121,3 +124,11 @@ if(opc == 3):
 	resultadoMultiplicacion = multiplicar(valor1,valor2)
 	print ("El resultado de su Multiplicación es: " + str(resultadoMultiplicacion))
 #Modo de división
+#Modo de potencia
+if (opc == 5):
+	print("\n")
+	print ("** Entrando al modulo de Potencia **")
+	valor1 = int(input("Ingrese su base: "))
+	valor2 = int(input("Ingrese su exponente: "))
+	resultadoPotencia = potenciar(valor1,valor2)
+	print ("El resultado de la Potencia es: " + str(resultadoPotencia))
