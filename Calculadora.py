@@ -123,7 +123,12 @@ if(opc == 3):
 	valor2 = int(input("Ingrese su segundo valor: "))
 	resultadoMultiplicacion = multiplicar(valor1,valor2)
 	print ("El resultado de su Multiplicación es: " + str(resultadoMultiplicacion))
+
 #Modo de división
+
+
+print ("Por fin")
+
 #Modo de potencia
 if (opc == 5):
 	print("\n")
